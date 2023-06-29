@@ -3,10 +3,9 @@
 /**
  * string-toupper - Changes all lowercase letters to uppercase
  * @n: pointer
- * Return: char
+ * Return: n
  */
 char *string_toupper(char *n)
-
 {
 	int i;
 
