@@ -22,12 +22,16 @@ int _sqrt_recursion(int n)
  *
  * Return: the natural square root
  */
-int number(int n, int root)
+int _sqrt(int n, int i)
 {
-	if (n * n == root)
-		return (n);
-	if (n == root)
+	int sqrt = i * i;
+
+	if (sqrt > n)
 		return (-1);
-	return (1 * number(n + 1, root));
+
+	if (sqrt == n)
+		return (i);
+
+	return (_sqrt(n, i + 1));
 }
 
